@@ -1,0 +1,75 @@
+@media (min-width: 640px) {
+    header {
+        grid-template-columns: auto 1fr;
+        padding: 1rem 1.5rem;
+        gap: 1rem;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        grid-column: 2 / 3;
+        grid-row: 1;
+    }
+
+    nav ul {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: flex-end;
+        background-color: transparent;
+        margin-top: 0;
+        gap: 0.25rem;
+    }
+
+    nav a {
+        color: var(--primary);
+        border-bottom: none;
+        border-radius: 6px;
+        padding: 0.6rem 1rem;
+    }
+
+    nav a:hover,
+    nav a:focus {
+        background-color: var(--primary);
+        color: #fff;
+    }
+
+    nav a.active {
+        background-color: var(--primary);
+        color: #fff;
+    }
+
+    main {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    main h1 {
+        font-size: 2rem;
+    }
+
+    .grid-top {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+
+    .card.photo img {
+        max-height: 420px;
+    }
+
+    .course-list {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
+}
+
+@media (min-width: 960px) {
+    main {
+        padding: 2rem;
+    }
+
+    .card h2 {
+        font-size: 1.2rem;
+    }
+}
