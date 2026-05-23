@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="San Martín Chamber logo">
+  <circle cx="32" cy="32" r="30" fill="#1B4965"/>
+  <path d="M32 12 L46 24 L46 50 L36 50 L36 38 L28 38 L28 50 L18 50 L18 24 Z" fill="#F5B700"/>
+  <circle cx="32" cy="22" r="3" fill="#F8F9FA"/>
+</svg>

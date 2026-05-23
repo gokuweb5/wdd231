@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-label="San Martin cityscape">
+  <defs>
+    <linearGradient id="sky" x1="0" x2="0" y1="0" y2="1">
+      <stop offset="0" stop-color="#1B4965"/>
+      <stop offset="1" stop-color="#62B6CB"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="500" fill="url(#sky)"/>
+  <circle cx="950" cy="120" r="55" fill="#F5B700"/>
+  <polygon points="0,400 200,250 380,330 600,200 820,310 1000,240 1200,330 1200,500 0,500" fill="#0D2A3F"/>
+  <polygon points="0,500 1200,500 1200,420 900,380 600,440 300,400 0,460" fill="#1B4965"/>
+</svg>

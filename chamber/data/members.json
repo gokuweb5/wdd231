@@ -1,0 +1,93 @@
+[
+    {
+        "name": "Mentores Virtuales",
+        "tagline": "Online tutoring and academic mentoring",
+        "address": "Av. Roosevelt 234, San Martín, San Salvador",
+        "phone": "+503 2222-1010",
+        "website": "https://mentoresvirtuales.com",
+        "email": "info@mentoresvirtuales.com",
+        "image": "images/members/mentores-virtuales.webp",
+        "membershipLevel": 3,
+        "category": "Education",
+        "established": 2022,
+        "description": "Virtual tutoring and academic mentoring platform for high school and university students."
+    },
+    {
+        "name": "EnglishForCallCenter",
+        "tagline": "Practical English for call centers",
+        "address": "Calle El Progreso 18, San Martín, San Salvador",
+        "phone": "+503 2222-2020",
+        "website": "https://englishforcallcenter.com",
+        "email": "contact@englishforcallcenter.com",
+        "image": "images/members/english-for-call-center.webp",
+        "membershipLevel": 3,
+        "category": "Training",
+        "established": 2023,
+        "description": "Intensive conversational English training focused on the call center and BPO industry."
+    },
+    {
+        "name": "FacturaAmerica",
+        "tagline": "Smart accounting system for El Salvador",
+        "address": "Av. Independencia 89, San Martín, San Salvador",
+        "phone": "+503 2288-8080",
+        "website": "https://facturamerica.com",
+        "email": "contacto@facturamerica.com",
+        "image": "images/members/facturamerica.webp",
+        "membershipLevel": 3,
+        "category": "Accounting",
+        "established": 2019,
+        "description": "Accounting platform specialized in electronic invoicing, VAT books, accounting entries and compliance with the Ministry of Finance."
+    },
+    {
+        "name": "YCC Cleaning Services",
+        "tagline": "Professional cleaning for home and business",
+        "address": "Winchester, VA, United States (international partner)",
+        "phone": "+1 703-389-0052",
+        "website": "https://ycccleaning.com",
+        "email": "info@ycccleaning.com",
+        "image": "images/members/logo-yccleaning.webp",
+        "membershipLevel": 2,
+        "category": "Cleaning",
+        "established": 2020,
+        "description": "Professional residential and commercial cleaning services. International affiliate member of the Chamber, using eco-friendly products."
+    },
+    {
+        "name": "E.M.A Tire & Auto",
+        "tagline": "Quality automotive service since 2005",
+        "address": "671-673 N Loudoun St, Winchester, VA 22601 (international partner)",
+        "phone": "+1 540-504-7831",
+        "website": "https://ematires.com",
+        "email": "welcome@ematires.com",
+        "image": "images/members/ema.svg",
+        "membershipLevel": 2,
+        "category": "Automotive",
+        "established": 2005,
+        "description": "Automotive shop specialized in tire sales, general mechanics and maintenance. International affiliate member of the Chamber."
+    },
+    {
+        "name": "Ferretería Álvarez",
+        "tagline": "Everything to build and repair",
+        "address": "Bulevar del Ejército 401, San Martín, San Salvador",
+        "phone": "+503 2244-4040",
+        "website": "https://ferreteriaalvarez.sv",
+        "email": "ventas@ferreteriaalvarez.sv",
+        "image": "images/members/ferreteria-alvarez.svg",
+        "membershipLevel": 1,
+        "category": "Hardware Store",
+        "established": 2008,
+        "description": "Local hardware store offering construction materials, tools and home goods to serve the San Martín community."
+    },
+    {
+        "name": "Farmacia Central San Martín",
+        "tagline": "Your health, our priority",
+        "address": "Calle El Calvario 7, San Martín, San Salvador",
+        "phone": "+503 2277-7070",
+        "website": "https://farmaciacentralsm.sv",
+        "email": "atencion@farmaciacentralsm.sv",
+        "image": "images/members/farmacia-central.svg",
+        "membershipLevel": 1,
+        "category": "Pharmacy",
+        "established": 2005,
+        "description": "Community pharmacy offering medicines, personal care products and professional service."
+    }
+]
