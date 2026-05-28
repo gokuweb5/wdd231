@@ -59,8 +59,8 @@ header {
 }
 
 .site-brand img {
-    width: 48px;
-    height: 48px;
+    width: 72px;
+    height: 72px;
 }
 
 .site-title {
@@ -283,13 +283,13 @@ main {
     letter-spacing: 0.05em;
     padding: 0.2rem 0.55rem;
     border-radius: 999px;
-    color: #fff;
+    color: #0D2A3F;
     background-color: var(--member);
     align-self: flex-start;
 }
 
-.member-card.gold .level { background-color: var(--gold); }
-.member-card.silver .level { background-color: var(--silver); }
+.member-card.gold .level { background-color: var(--gold); color: #0D2A3F; }
+.member-card.silver .level { background-color: var(--silver); color: #fff; }
 
 .member-card dl {
     margin: 0;
