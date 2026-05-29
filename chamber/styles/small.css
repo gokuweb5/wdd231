@@ -61,6 +61,8 @@ header {
 .site-brand img {
     width: 72px;
     height: 72px;
+    object-fit: contain;
+    aspect-ratio: 1 / 1;
 }
 
 .site-title {
