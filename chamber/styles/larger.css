@@ -1,4 +1,11 @@
 @media (min-width: 640px) {
+    .hero img { height: 320px; }
+    .hero-overlay h1 { font-size: 2rem; }
+
+    .events-grid { grid-template-columns: repeat(2, 1fr); }
+
+    .spotlight-grid { grid-template-columns: repeat(2, 1fr); }
+
     header {
         grid-template-columns: auto 1fr;
         padding: 1rem 1.5rem;
@@ -62,6 +69,13 @@
 
 @media (min-width: 960px) {
     main { padding: 2rem; }
+
+    .hero img { height: 400px; }
+    .hero-overlay h1 { font-size: 2.5rem; }
+
+    .events-grid { grid-template-columns: repeat(3, 1fr); }
+
+    .spotlight-grid { grid-template-columns: repeat(3, 1fr); }
 
     #members.grid {
         grid-template-columns: repeat(3, 1fr);

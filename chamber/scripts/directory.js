@@ -53,7 +53,7 @@ function displayMembers(members) {
                 <dt>Since</dt><dd>${member.established ?? '—'}</dd>
             </dl>
             <p class="description">${member.description ?? ''}</p>
-            <a class="website" href="${member.website}" target="_blank" rel="noopener">Visit website</a>
+            <a class="website" href="${member.website}" target="_blank" rel="noopener">Visit ${member.name}</a>
         `;
 
         membersContainer.appendChild(card);

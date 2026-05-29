@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | San Martín Chamber of Commerce</title>
+    <meta name="description" content="Welcome to the San Martín Chamber of Commerce. Discover local businesses, events, and weather in San Martín, San Salvador, El Salvador.">
+    <meta name="author" content="Luis Navarrete">
+
+    <meta property="og:title" content="Home | San Martín Chamber of Commerce">
+    <meta property="og:description" content="Welcome to the San Martín Chamber of Commerce in San Salvador, El Salvador.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gokuweb5.github.io/wdd231/chamber/">
+    <meta property="og:image" content="https://gokuweb5.github.io/wdd231/chamber/images/logo.webp">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="site-brand" href="index.html" aria-label="San Martín Chamber of Commerce home">
+            <img src="images/logo.webp" alt="San Martín Chamber of Commerce logo" width="120" height="120">
+            <span class="site-title">
+                <span class="name">San Martín Chamber of Commerce</span>
+                <span class="place">San Salvador, El Salvador</span>
+            </span>
+        </a>
+
+        <button id="hamburger" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav id="primary-nav" aria-label="Primary navigation">
+            <ul>
+                <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="images/hero.jpg" alt="San Martín cityscape" width="1200" height="400" loading="eager">
+            <div class="hero-overlay">
+                <h1>Welcome to San Martín</h1>
+                <p>Empowering local businesses since 2005</p>
+                <a href="join.html" class="cta-btn">Join the Chamber</a>
+            </div>
+        </section>
+
+        <!-- Current Events -->
+        <section class="events">
+            <h2>Current Events</h2>
+            <div class="events-grid">
+                <article class="event-card">
+                    <h3>Business Networking Breakfast</h3>
+                    <p class="event-date">June 5, 2026 — 8:00 AM</p>
+                    <p>Connect with fellow entrepreneurs and explore collaboration opportunities over breakfast.</p>
+                </article>
+                <article class="event-card">
+                    <h3>Digital Marketing Workshop</h3>
+                    <p class="event-date">June 12, 2026 — 10:00 AM</p>
+                    <p>Learn how to grow your business online with social media strategies and SEO basics.</p>
+                </article>
+                <article class="event-card">
+                    <h3>Annual Chamber Gala</h3>
+                    <p class="event-date">June 28, 2026 — 7:00 PM</p>
+                    <p>Celebrate local business achievements and enjoy an evening of recognition and community.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Weather Section -->
+        <section class="weather">
+            <h2>Current Weather</h2>
+            <div class="weather-card">
+                <div class="weather-current">
+                    <span id="weather-temp"></span>
+                    <figure>
+                        <img id="weather-icon" src="" alt="" width="80" height="80">
+                        <figcaption id="weather-desc"></figcaption>
+                    </figure>
+                </div>
+                <div class="weather-forecast">
+                    <h3>3-Day Forecast</h3>
+                    <div id="forecast" class="forecast-grid"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Spotlights Section -->
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-cards" class="spotlight-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-contact">
+                <p class="org">San Martín Chamber of Commerce</p>
+                <p>Av. Roosevelt 100</p>
+                <p>San Martín, San Salvador, El Salvador</p>
+                <p>info@sanmartincc.sv</p>
+                <p>+503 2222-0000</p>
+            </div>
+
+            <div class="footer-social" aria-label="Social media">
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+                </a>
+                <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X (Twitter)">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2H21.5l-7.5 8.57L23 22h-6.844l-5.36-7.01L4.66 22H1.4l8.04-9.19L1 2h7l4.84 6.41L18.244 2zm-2.4 18h1.86L7.24 4H5.24l10.6 16z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/luis-navarrete-dev/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+                </a>
+            </div>
+
+            <div class="footer-meta">
+                <p>WDD 231 Class Project</p>
+                <p>Luis Navarrete</p>
+                <p>&copy; <span id="currentyear"></span> San Martín Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
