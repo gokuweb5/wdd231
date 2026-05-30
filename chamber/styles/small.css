@@ -771,6 +771,11 @@ footer {
     animation: fadeSlideIn 0.5s ease-out both;
 }
 
+.level-card.delay-1 { animation-delay: 0s; }
+.level-card.delay-2 { animation-delay: 0.1s; }
+.level-card.delay-3 { animation-delay: 0.2s; }
+.level-card.delay-4 { animation-delay: 0.3s; }
+
 @keyframes fadeSlideIn {
     from {
         opacity: 0;
@@ -790,7 +795,7 @@ footer {
 .level-card .price {
     font-size: 1.2rem;
     font-weight: 700;
-    color: var(--accent);
+    color: #b07d00;
     margin-bottom: 1rem;
 }
 
