@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join | San Martín Chamber of Commerce</title>
+    <meta name="description" content="Apply to join the San Martín Chamber of Commerce. Choose from NP, Bronze, Silver, or Gold membership levels.">
+    <meta name="author" content="Luis Navarrete">
+
+    <meta property="og:title" content="Join | San Martín Chamber of Commerce">
+    <meta property="og:description" content="Apply to join the San Martín Chamber of Commerce membership.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gokuweb5.github.io/wdd231/chamber/join.html">
+    <meta property="og:image" content="https://gokuweb5.github.io/wdd231/chamber/images/logo.webp">
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+<body>
+    <header>
+        <a class="site-brand" href="index.html" aria-label="San Martín Chamber of Commerce home">
+            <img src="images/logo.webp" alt="San Martín Chamber of Commerce logo" width="72" height="72">
+            <span class="site-title">
+                <span class="name">San Martín Chamber of Commerce</span>
+                <span class="place">San Salvador, El Salvador</span>
+            </span>
+        </a>
+
+        <button id="hamburger" class="hamburger" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-nav">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav id="primary-nav" aria-label="Primary navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active" aria-current="page">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Join the Chamber</h1>
+            <p>Become a member and grow your business with us</p>
+        </section>
+
+        <div class="join-content">
+            <section class="membership-form">
+                <h2>Membership Application Form</h2>
+                <form action="thankyou.html" method="GET">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" title="Enter your first name" autocomplete="given-name" required>
+
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" title="Enter your last name" autocomplete="family-name" required>
+
+                    <label for="org-title">Organizational Title</label>
+                    <input type="text" id="org-title" name="org-title" title="Enter your title within the organization" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email" placeholder="john89@gmail.com" required>
+
+                    <label for="phone">Mobile Phone Number</label>
+                    <input type="tel" id="phone" name="phone" title="Enter your mobile phone number" autocomplete="tel" required>
+
+                    <label for="organization">Business/Organization Name</label>
+                    <input type="text" id="organization" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
+
+                    <label for="membership">Membership Level</label>
+                    <select id="membership" name="membership" title="Select your membership level" required>
+                        <option value="">Select a membership level...</option>
+                        <option value="np">NP Membership (Non-Profit)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+
+                    <label for="description">Business Description</label>
+                    <textarea id="description" name="description" title="Describe your business or organization" rows="4"></textarea>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <button type="submit">Submit Application</button>
+                </form>
+            </section>
+
+            <section class="membership-levels">
+                <h2>Membership Levels</h2>
+
+                <div class="level-card" style="animation-delay: 0s;">
+                    <h3>Non Profit Membership Level</h3>
+                    <p class="price">Free</p>
+                    <button class="learn-more" data-modal="np-modal">Learn More</button>
+                </div>
+
+                <div class="level-card" style="animation-delay: 0.1s;">
+                    <h3>Bronze Membership Level</h3>
+                    <p class="price">$50/year</p>
+                    <button class="learn-more" data-modal="bronze-modal">Learn More</button>
+                </div>
+
+                <div class="level-card" style="animation-delay: 0.2s;">
+                    <h3>Silver Membership Level</h3>
+                    <p class="price">$100/year</p>
+                    <button class="learn-more" data-modal="silver-modal">Learn More</button>
+                </div>
+
+                <div class="level-card" style="animation-delay: 0.3s;">
+                    <h3>Gold Membership Level</h3>
+                    <p class="price">$200/year</p>
+                    <button class="learn-more" data-modal="gold-modal">Learn More</button>
+                </div>
+            </section>
+        </div>
+
+        <!-- Modals -->
+        <dialog id="np-modal">
+            <button class="close-modal">✕</button>
+            <h2>Non Profit Membership</h2>
+            <p><strong>Cost:</strong> Free</p>
+            <h3>Benefits:</h3>
+            <ul>
+                <li>Listing in our online directory</li>
+                <li>Access to chamber events</li>
+                <li>Networking opportunities</li>
+                <li>Monthly newsletter</li>
+            </ul>
+            <p>Perfect for non-profit organizations looking to connect with the local business community.</p>
+        </dialog>
+
+        <dialog id="bronze-modal">
+            <button class="close-modal">✕</button>
+            <h2>Bronze Membership</h2>
+            <p><strong>Cost:</strong> $50/year</p>
+            <h3>Benefits:</h3>
+            <ul>
+                <li>All NP benefits</li>
+                <li>Business spotlight in newsletter</li>
+                <li>10% discount on event tickets</li>
+                <li>Access to training workshops</li>
+                <li>Social media mentions</li>
+            </ul>
+            <p>Great for small businesses starting to grow their presence.</p>
+        </dialog>
+
+        <dialog id="silver-modal">
+            <button class="close-modal">✕</button>
+            <h2>Silver Membership</h2>
+            <p><strong>Cost:</strong> $100/year</p>
+            <h3>Benefits:</h3>
+            <ul>
+                <li>All Bronze benefits</li>
+                <li>Featured in home page spotlights</li>
+                <li>20% discount on event tickets</li>
+                <li>Priority event registration</li>
+                <li>Advertising opportunities</li>
+                <li>Business referral program</li>
+            </ul>
+            <p>Ideal for established businesses seeking more visibility.</p>
+        </dialog>
+
+        <dialog id="gold-modal">
+            <button class="close-modal">✕</button>
+            <h2>Gold Membership</h2>
+            <p><strong>Cost:</strong> $200/year</p>
+            <h3>Benefits:</h3>
+            <ul>
+                <li>All Silver benefits</li>
+                <li>Premium home page spotlight position</li>
+                <li>Free event tickets (up to 4 per event)</li>
+                <li>Exclusive networking events</li>
+                <li>Featured advertising on all pages</li>
+                <li>VIP access to special events</li>
+                <li>Direct referrals from chamber</li>
+            </ul>
+            <p>The ultimate package for businesses wanting maximum exposure and benefits.</p>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-inner">
+            <div class="footer-contact">
+                <p class="org">San Martín Chamber of Commerce</p>
+                <p>Av. Roosevelt 100</p>
+                <p>San Martín, San Salvador, El Salvador</p>
+                <p>info@sanmartincc.sv</p>
+                <p>+503 2222-0000</p>
+            </div>
+
+            <nav class="footer-social" aria-label="Social media">
+                <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"/></svg>
+                </a>
+                <a href="https://x.com/" target="_blank" rel="noopener" aria-label="X (Twitter)">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2H21.5l-7.5 8.57L23 22h-6.844l-5.36-7.01L4.66 22H1.4l8.04-9.19L1 2h7l4.84 6.41L18.244 2zm-2.4 18h1.86L7.24 4H5.24l10.6 16z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/luis-navarrete-dev/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+                </a>
+            </nav>
+
+            <div class="footer-meta">
+                <p>WDD 231 Class Project</p>
+                <p>Luis Navarrete</p>
+                <p>&copy; <span id="currentyear"></span> San Martín Chamber of Commerce</p>
+                <p id="lastModified"></p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

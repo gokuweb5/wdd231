@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced HTML Forms | WDD 231</title>
+    <style>
+        body {
+            font-family: system-ui, sans-serif;
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: #f5f5f5;
+            color: #333;
+        }
+        h1 { color: #004c8c; }
+        form {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        fieldset {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        legend {
+            font-weight: bold;
+            color: #004c8c;
+            padding: 0 0.5rem;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.3rem;
+            font-weight: 500;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 0.6rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            box-sizing: border-box;
+        }
+        input:focus, select:focus, textarea:focus {
+            outline: none;
+            border-color: #004c8c;
+            box-shadow: 0 0 0 3px rgba(0,76,140,0.15);
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .checkbox-group input { width: auto; margin: 0; }
+        button {
+            background: #004c8c;
+            color: #fff;
+            border: none;
+            padding: 0.8rem 2rem;
+            border-radius: 6px;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+        button:hover { background: #002f57; }
+    </style>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="thankyou.html" method="GET">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
+
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+503 0000-0000">
+        </fieldset>
+
+        <fieldset>
+            <legend>Course Preferences</legend>
+            <label for="program">Program</label>
+            <select id="program" name="program" required>
+                <option value="">Select a program...</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Software Engineering">Software Engineering</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Cybersecurity">Cybersecurity</option>
+            </select>
+
+            <label for="experience">Experience Level</label>
+            <select id="experience" name="experience">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+            <label for="comments">Additional Comments</label>
+            <textarea id="comments" name="comments" rows="3" placeholder="Any questions or comments..."></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Options</legend>
+            <div class="checkbox-group">
+                <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                <label for="newsletter">Subscribe to newsletter</label>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" name="terms" value="accepted" required>
+                <label for="terms">I accept the terms and conditions</label>
+            </div>
+        </fieldset>
+
+        <input type="hidden" id="timestamp" name="timestamp">
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        document.getElementById('timestamp').value = new Date().toISOString();
+    </script>
+</body>
+</html>

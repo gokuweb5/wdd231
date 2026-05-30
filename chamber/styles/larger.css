@@ -80,6 +80,20 @@
     #members.grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    /* Join page - side by side layout */
+    .join-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .membership-form {
+        flex: 1;
+    }
+
+    .membership-levels {
+        flex: 0 0 320px;
+    }
 }
 
 @media (min-width: 1200px) {
