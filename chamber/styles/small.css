@@ -915,3 +915,108 @@ dialog .close-modal:hover {
     background: var(--primary-dark);
     color: #fff;
 }
+
+/* ---------- Discover Page ---------- */
+.discover-main {
+    padding: 1.5rem;
+}
+
+.visitor-message {
+    background: var(--primary);
+    color: #fff;
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.visitor-message:empty {
+    display: none;
+}
+
+/* Small screen: single column using named grid areas */
+.discover-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+.discover-card:nth-child(1) { grid-area: card1; }
+.discover-card:nth-child(2) { grid-area: card2; }
+.discover-card:nth-child(3) { grid-area: card3; }
+.discover-card:nth-child(4) { grid-area: card4; }
+.discover-card:nth-child(5) { grid-area: card5; }
+.discover-card:nth-child(6) { grid-area: card6; }
+.discover-card:nth-child(7) { grid-area: card7; }
+.discover-card:nth-child(8) { grid-area: card8; }
+
+.discover-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.discover-card h2 {
+    color: var(--primary);
+    font-size: 1.2rem;
+    margin: 0 0 0.75rem;
+    text-align: center;
+}
+
+.discover-card figure {
+    margin: 0 0 0.75rem;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.discover-card figure img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.discover-card address {
+    font-style: normal;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.discover-card p {
+    flex: 1;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.discover-card .learn-more-btn {
+    background: var(--primary);
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    align-self: center;
+}
+
+.discover-card .learn-more-btn:hover {
+    background: var(--primary-dark);
+}

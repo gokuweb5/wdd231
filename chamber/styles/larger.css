@@ -6,6 +6,16 @@
 
     .spotlight-grid { grid-template-columns: repeat(2, 1fr); }
 
+    /* Medium screen: 2 columns using named grid areas */
+    .discover-grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "card1 card2"
+            "card3 card4"
+            "card5 card6"
+            "card7 card8";
+    }
+
     header {
         grid-template-columns: auto 1fr;
         padding: 1rem 1.5rem;
@@ -93,6 +103,24 @@
 
     .membership-levels {
         flex: 0 0 320px;
+    }
+
+    /* Large screen: 4 columns using named grid areas */
+    .discover-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "card1 card2 card3 card4"
+            "card5 card6 card7 card8";
+    }
+
+    /* Image hover effect (large screens only, not mobile) */
+    .discover-card figure img {
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .discover-card figure img:hover {
+        transform: scale(1.1);
+        filter: brightness(1.1) saturate(1.2);
     }
 }
 
