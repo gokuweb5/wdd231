@@ -1,0 +1,167 @@
+[
+    {
+        "id": 1,
+        "name": "San Martín Chamber of Commerce",
+        "category": "website",
+        "description": "A fully responsive chamber of commerce website with member directory, weather API integration, and company spotlights.",
+        "technologies": ["HTML", "CSS", "JavaScript", "OpenWeatherMap API"],
+        "image": "images/chamber-web.webp",
+        "url": "https://gokuweb5.github.io/wdd231/chamber/",
+        "year": 2026,
+        "featured": true
+    },
+    {
+        "id": 2,
+        "name": "Fullstack Chess Application",
+        "category": "application",
+        "description": "A complete online chess game built with JavaScript, featuring real-time gameplay, move validation, and player vs player mode.",
+        "technologies": ["JavaScript", "Node.js", "WebSockets", "HTML Canvas"],
+        "image": "images/chess-web.webp",
+        "url": "https://www.udemy.com/course/domina-javascript-crea-una-aplicacion-fullstack-de-ajedrez/",
+        "year": 2024,
+        "featured": true
+    },
+    {
+        "id": 3,
+        "name": "YCC Cleaning Services",
+        "category": "website",
+        "description": "Professional cleaning company website with service listings, gallery, free quote request form, and bilingual support.",
+        "technologies": ["HTML", "CSS", "JavaScript", "Responsive Design"],
+        "image": "images/yccleaning-web.webp",
+        "url": "https://yccleaning.com",
+        "year": 2026,
+        "featured": true
+    },
+    {
+        "id": 4,
+        "name": "EnglishForCallCenter",
+        "category": "education",
+        "description": "Educational platform for call center English training with course catalog, student registration, and progress tracking.",
+        "technologies": ["HTML", "CSS", "JavaScript", "REST API"],
+        "image": "images/EFCC.webp",
+        "url": "https://englishforcallcenter.com",
+        "year": 2023,
+        "featured": false
+    },
+    {
+        "id": 5,
+        "name": "FacturaAmerica",
+        "category": "application",
+        "description": "Accounting and electronic invoicing system for El Salvador, compliant with Ministry of Finance regulations.",
+        "technologies": ["JavaScript", "Node.js", "PostgreSQL", "REST API"],
+        "image": "images/facturamerica-web.webp",
+        "url": "https://facturamerica.com",
+        "year": 2026,
+        "featured": false
+    },
+    {
+        "id": 6,
+        "name": "E.M.A Tire & Auto",
+        "category": "website",
+        "description": "Automotive service shop website with service catalog, appointment scheduling, and customer reviews.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "image": "images/ema-web.webp",
+        "url": "https://ematires.com",
+        "year": 2025,
+        "featured": false
+    },
+    {
+        "id": 8,
+        "name": "Restaurant Management System",
+        "category": "application",
+        "description": "Point of sale and inventory management application for small restaurants.",
+        "technologies": ["JavaScript", "Electron", "SQLite"],
+        "image": "images/restaurant-pos.webp",
+        "url": "#",
+        "year": 2022,
+        "featured": false
+    },
+    {
+        "id": 9,
+        "name": "Ferretería Álvarez",
+        "category": "website",
+        "description": "Local hardware store website with product catalog and inventory search.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "image": "images/hardware-store.webp",
+        "url": "#",
+        "year": 2022,
+        "featured": false
+    },
+    {
+        "id": 10,
+        "name": "Farmacia Central San Martín",
+        "category": "website",
+        "description": "Community pharmacy website with product listings and prescription refill request form.",
+        "technologies": ["HTML", "CSS", "JavaScript"],
+        "image": "images/pharmacy-software.webp",
+        "url": "#",
+        "year": 2022,
+        "featured": false
+    },
+    {
+        "id": 11,
+        "name": "Student Progress Tracker",
+        "category": "education",
+        "description": "Web application for tracking student progress in online courses with dashboard and analytics.",
+        "technologies": ["JavaScript", "Chart.js", "LocalStorage"],
+        "image": "images/student-tracker.webp",
+        "url": "#",
+        "year": 2023,
+        "featured": false
+    },
+    {
+        "id": 12,
+        "name": "Real Estate Listings",
+        "category": "website",
+        "description": "Property listing website with search filters, image galleries, and contact forms.",
+        "technologies": ["HTML", "CSS", "JavaScript", "Leaflet Maps"],
+        "image": "images/real-estate-software.webp",
+        "url": "#",
+        "year": 2023,
+        "featured": false
+    },
+    {
+        "id": 13,
+        "name": "Inventory Control App",
+        "category": "application",
+        "description": "Desktop-like web application for small business inventory management with barcode scanning.",
+        "technologies": ["JavaScript", "IndexedDB", "PWA"],
+        "image": "images/inventory-app.webp",
+        "url": "#",
+        "year": 2024,
+        "featured": false
+    },
+    {
+        "id": 14,
+        "name": "Online Quiz Platform",
+        "category": "education",
+        "description": "Interactive quiz platform for programming students with timed assessments and score tracking.",
+        "technologies": ["JavaScript", "LocalStorage", "CSS Animations"],
+        "image": "images/online-quiz-app.webp",
+        "url": "#",
+        "year": 2024,
+        "featured": false
+    },
+    {
+        "id": 15,
+        "name": "Portfolio Template Generator",
+        "category": "application",
+        "description": "Tool that generates responsive portfolio websites from a JSON configuration file.",
+        "technologies": ["JavaScript", "ES Modules", "Template Literals"],
+        "image": "images/portfolio-template.webp",
+        "url": "#",
+        "year": 2025,
+        "featured": false
+    },
+    {
+        "id": 16,
+        "name": "Fitness Tracking Dashboard",
+        "category": "application",
+        "description": "Personal fitness tracking web app with workout logging, charts, and goal setting.",
+        "technologies": ["JavaScript", "Chart.js", "LocalStorage", "PWA"],
+        "image": "images/fitness-tracking.webp",
+        "url": "#",
+        "year": 2025,
+        "featured": false
+    }
+]
